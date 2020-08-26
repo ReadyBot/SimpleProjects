@@ -1,0 +1,30 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    background: linear-gradient(to right, hsl(49, 84%, 33%), hsl(249, 80%, 33%));
+   
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    ". . ."
+    ". index-title ."
+    ". index-grid ."
+    ". . .";
+    justify-content: center;
+    align-content: center;
+}
+
+.index-grid{
+    vertical-align: middle;
+}
+.index-title{
+    color: white;
+}
+.button{
+    background-color: aquamarine;
+}
